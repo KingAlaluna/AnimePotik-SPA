@@ -3,7 +3,7 @@ function darkTheme() {
   //активна кнопка нижнього банера
   data.activeBtnBottomBanner.style.background = 'var(--gradient-5)';
   //theme
-  html.btnTheme.style.backgroundImage = 'url(img/style/dark-theme.svg)';
+  html.btnTheme2.style.backgroundImage = 'url(img/style/dark-theme.svg)';
   data.darkTheme = true;
 }
 
@@ -12,7 +12,7 @@ function lightTheme() {
   //активна кнопка нижнього банера
   data.activeBtnBottomBanner.style.background = 'var(--gradient-5)';
   //theme
-  html.btnTheme.style.backgroundImage = 'url(img/style/light-theme.svg)';
+  html.btnTheme2.style.backgroundImage = 'url(img/style/light-theme.svg)';
   data.darkTheme = false;
 }
 

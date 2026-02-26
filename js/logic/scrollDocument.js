@@ -17,17 +17,12 @@ function scrollToBottom() {
   });
 }
 
+
 //click button scroll
 html.btnTopPage.addEventListener('click', () => {
   scrollToTop();
 });
 html.btnBottomPage.addEventListener('click', () => {
-  scrollToBottom();
-});
-html.btnTopPage2.addEventListener('click', () => {
-  scrollToTop();
-});
-html.btnBottomPage2.addEventListener('click', () => {
   scrollToBottom();
 });
 

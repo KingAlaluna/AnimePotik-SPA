@@ -47,80 +47,71 @@
         </svg>
       </div>
       
-      <div id="btn-theme">
-        <button id="btn-theme-2"></button>
-      </div>
-    </div>
-    
-    
-    <!--banner bottom-->
-    <div id="bottom-banner">
       
-      
-      <button data-document="main-page" class="btn-switch-page btn-bottom-banner" id="btn-main-page">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-          <polyline points="9 22 9 12 15 12 15 22"/>
-        </svg>
-      </button>
-      
-      
-      <button class="btn-bottom-banner" id="btn-sort-anime">
-        <svg viewBox="0 0 24 24">
-          <path d="M2,2 22,2 22,22 2,22 z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-          <path d="M6.5,6.5 6.5,6.5 M12,6.5 12,6.5 M17.5,6.5 17.5,6.5 M6.5,12 6.5,12 M12,12 12,12 M17.5,12 17.5,12 M6.5,17.5 6.5,17.5 M12,17.5 12,17.5 M17.5,17.5 17.5,17.5" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-        </svg>
-      </button>
-      
-      
-      <button class="btn-bottom-banner" id="btn-my-project">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#000" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
-          <path d="M60,10 40,90 M30,30 10,50 30,70 M70,30 90,50 70,70" />
-        </svg>
-      </button>
-      
-      
-      <button class="btn-bottom-banner" id="btn-detalis-weblite">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-          <path d="M 12,2 Q 22,2 22,12 Q 22,22 12,22 Q 2,22 2,12 Q 2,2 12,2 Z" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
-          <path d="M8 9c0-2 1.5-3.5 3.5-3.5S16 7 16 9c0 2.5-3 3-4 4.5V15m0 3v0" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-      
-      
-      <!--скриті кнопки-->
-      <!-- 1 scroll document-->
-      <div id="btn-top-page-2">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12,19 12,5 M5,12 12,5 19,12" />
-        </svg>
+      <!-- гамбургер меню-->
+      <div id="btn-menu">
+        <div class="line-menu line-menu-1"></div>
+        <div class="line-menu line-menu-2"></div>
+        <div class="line-menu line-menu-3"></div>
       </div>
       
-      <div id="btn-bottom-page-2">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12,19 12,5 M5,12 12,19 19,12" />
-        </svg>
-      </div>
       
     </div>
     
     
-    <!-- 2 scroll document-->
-    <a id="btn-top-page">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12,19 12,5 M5,12 12,5 19,12" />
-      </svg>
-    </a>
-    
-    <a id="btn-bottom-page">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12,19 12,5 M5,12 12,19 19,12" />
-      </svg>
-    </a>
     
     
     <!--контент-->
     <div id="content-container">
+      
+      <!--меню панель-->
+      <div id="menu">
+        <h3>Загальне:</h3>
+        
+        <button class="menu-btn" id="btn-theme">
+          <div id="btn-theme-2"></div>
+          Тема
+        </button>
+        
+        
+        <button data-document="main-page" class="menu-btn btn-switch-page btn-bottom-banner" id="btn-main-page">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          Головна
+        </button>
+      
+      
+        <button class="menu-btn btn-bottom-banner" id="btn-sort-anime">
+          <svg viewBox="0 0 24 24">
+            <path d="M2,2 22,2 22,22 2,22 z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M6.5,6.5 6.5,6.5 M12,6.5 12,6.5 M17.5,6.5 17.5,6.5 M6.5,12 6.5,12 M12,12 12,12 M17.5,12 17.5,12 M6.5,17.5 6.5,17.5 M12,17.5 12,17.5 M17.5,17.5 17.5,17.5" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+          </svg>
+          Сортувати аніме
+        </button>
+      
+      
+        <button class="menu-btn btn-bottom-banner" id="btn-my-project">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#000" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M60,10 40,90 M30,30 10,50 30,70 M70,30 90,50 70,70" />
+          </svg>
+          Моі проєкти
+        </button>
+      
+      
+        <button class="menu-btn btn-bottom-banner" id="btn-detalis-weblite">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+            <path d="M 12,2 Q 22,2 22,12 Q 22,22 12,22 Q 2,22 2,12 Q 2,2 12,2 Z" fill="none" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M8 9c0-2 1.5-3.5 3.5-3.5S16 7 16 9c0 2.5-3 3-4 4.5V15m0 3v0" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Про мене
+        </button>
+        
+      </div>
+      
+      
+      
       
       <!--сторінка з аніме (головна та відсортовані)-->
       <div class="scroll-page page type-flex" id="main-page">
@@ -165,25 +156,25 @@
       <div class="scroll-page page" id="page-sort-anime">
         
         
-        <h2>Жанр:</h2>
+        <h3>Жанр:</h3>
         <div id="container-sort-genre" class="container-sort-anime">
           <!--контент додає js-->
         </div>
         
         
-        <h2>Тип:</h2>
+        <h3>Тип:</h3>
         <div id="container-sort-type" class="container-sort-anime">
           <!--контент додає js-->
         </div>
         
         
-        <h2>Рік:</h2>
+        <h3>Рік:</h3>
         <div id="container-sort-year" class="container-sort-anime">
           <!--контент додає js-->
         </div>
         
         
-        <h2>Студія:</h2>
+        <h3>Студія:</h3>
         <div id="container-sort-studio" class="container-sort-anime">
           <!--контент додає js-->
         </div>
@@ -264,8 +255,44 @@
         <br>
         <br>
         <h3>Ігри:</h3>
-        <h4>Тут буде коротка інформація та посилання на мої ігри...</h4>
-      
+        
+        
+        <br>
+        <br>
+        <h2>Flappy UFO-DOM</h2>
+        <p>Мій <b>п'ятий опублікований</b> проєкт. Це гра схожа на <b>Flappy Bird</b>, але з оригінальними реалізаціями.</p>
+        
+        <ul>
+          <li><b>Архітектура:</b> SPA, DOM, Vanilla JavaScript. Дана комбінація технологій була обрана <b>свідомо, розуміючи всі недоліки</b>, її мета показати <b>глибоке розуміння</b> "чистих" технологій та DOM маніпуляцій.</li>
+          <li><b>Механіки:</b> Схожі на Flappy Bird, але замість птаха <b>НЛО (космічна тарілка)</b>. Можливо, в майбутньому буде значне розширення механік з додаванням <b>скінів, рівнів, та інших</b> можливостей.</li>
+        </ul>
+        
+        <a href="https://kingalaluna.github.io/Flappy-UFO-DOM/">Перейти на Flappy UFO-DOM</a>
+        
+        <h3>Flappy UFO-DOM проєкт з відкритим вихідним кодом</h3>
+        
+        <a href="https://github.com/KingAlaluna/Flappy-UFO-DOM.git">Подивитися вихідний код</a>
+        
+        
+        
+        <br>
+        <br>
+        <h2>Dino-DOM</h2>
+        <p>Мій <b>шостий опублікований</b> проєкт. Це гра схожа на <b>Google Dino</b>, але з оригінальними реалізаціями.</p>
+        
+        <ul>
+          <li><b>Архітектура:</b> SPA, DOM, Vanilla JavaScript. Дана комбінація технологій була обрана <b>свідомо, розуміючи всі недоліки</b>, її мета показати <b>глибоке розуміння</b> "чистих" технологій та DOM маніпуляцій.</li>
+          <li><b>Механіки:</b> Схожі на Google Dino, але з оригінальними <b>асетами та іншими відміностями</b>. Можливо, в майбутньому буде значне розширення механік з додаванням <b>скінів, рівнів, та інших</b> можливостей.</li>
+        </ul>
+        
+        <a href="https://kingalaluna.github.io/Dino-DOM/">Перейти на Dino-DOM</a>
+        
+        <h3>Dino-DOM проєкт з відкритим вихідним кодом</h3>
+        
+        <a href="https://github.com/KingAlaluna/Dino-DOM.git">Подивитися вихідний код</a>
+        
+        
+        
         <div class="container-all-law-protected">
           <span class="text-all-law-protected">© 2026 АнімеПотік. Всі права захищені.</span>
         </div>
@@ -359,6 +386,23 @@
       
       
     </div>
+    
+    
+    <!-- scroll document-->
+    <a id="btn-top-page">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12,19 12,5 M5,12 12,5 19,12" />
+      </svg>
+    </a>
+    
+    <a id="btn-bottom-page">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12,19 12,5 M5,12 12,19 19,12" />
+      </svg>
+    </a>
+    
+    
+    
   </div>
   
   

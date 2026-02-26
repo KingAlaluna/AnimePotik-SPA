@@ -30,9 +30,16 @@ html.btnMainPage.addEventListener('click', () => {
 //міняємо стилі активних кнопок
 html.btnBottomBanner.forEach(e => {
   e.addEventListener('click', () => {
-    data.activeBtnBottomBanner.style.background = 'var(--gradient-3)';
+    data.activeBtnBottomBanner.style.backgroundImage = 'var(--gradient-3)';
     data.activeBtnBottomBanner = e;
-    data.activeBtnBottomBanner.style.background = 'var(--gradient-5)';
+    data.activeBtnBottomBanner.style.backgroundImage = 'var(--gradient-5)';
   });
 });
 
+
+
+//гамбургер меню
+html.btnMenu.addEventListener('click', () => {
+  html.btnMenu.classList.toggle('active');
+  html.menu.classList.toggle('active');
+});

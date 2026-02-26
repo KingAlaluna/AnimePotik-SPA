@@ -9,6 +9,7 @@ const html = {
   allPage: c('page'),
   inputSearch: i('input-search'),
   video: i('video'),
+  menu: i('menu'),
   
   
   //контейнери
@@ -24,7 +25,8 @@ const html = {
   
   
   //кнопки
-  btnTheme: i('btn-theme-2'),
+  btnTheme: i('btn-theme'),
+  btnTheme2: i('btn-theme-2'),
   btnSearch: i('btn-search'),
   btnswitchPage: c('btn-switch-page'),
   btnBottomBanner: c('btn-bottom-banner'),
@@ -36,11 +38,11 @@ const html = {
   
   btnTopPage: i('btn-top-page'),
   btnBottomPage: i('btn-bottom-page'),
-  btnTopPage2: i('btn-top-page-2'),
-  btnBottomPage2: i('btn-bottom-page-2'),
   
   pgBtnLeft: i('pg-btn-left'),
   pgBtnRight: i('pg-btn-right'),
+  
+  btnMenu: i('btn-menu'),
   
   
   
