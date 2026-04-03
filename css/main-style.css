@@ -1,0 +1,160 @@
+/*стилі для книжноі орієнтаціі*/
+@font-face {
+  font-family: 'MyCustomFont'; /* Любое имя для шрифта */
+  src: url('944-font.ttf') format('truetype'); /* путь к файлу */
+  font-weight: normal; /* насыщенность */
+  font-style: normal; /* стиль */
+}
+
+* {
+  flex-shrink: 0;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  color: var(--text);
+  stroke: var(--text);
+}
+
+html, body {
+  width: 100%;
+  height: max-content;
+  min-height: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+h1, h2 {
+  font-family: 'Russo One', sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.wrap-content,
+.theme-content-3 {
+  height: max-content;
+  display: grid;
+  grid-template: auto / repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.anime-img,
+.view-anime-poster {
+  aspect-ratio: 5/7;
+  border-radius: var(--radius);
+  border: var(--border-1);
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.anime-img {
+  border: none;
+  border-radius: var(--radius) var(--radius) 0 0;
+  
+  span {
+    background-color: var(--color-5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    width: max-content;
+    height: max-content;
+    margin: 0;
+    border-radius: 0 var(--radius) 0 var(--radius);
+    
+    &.year {
+      right: auto;
+      left: 0;
+      border-radius: var(--radius) 0 var(--radius) 0;
+    }
+    
+    &.rank {
+      top: auto;
+      bottom: 0;
+      border-radius: var(--radius) 0 0 0;
+    }
+    
+    &.rating {
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 0;
+      border-radius: 0 var(--radius) 0 0;
+    }
+  }
+}
+
+
+.footer-copy-wrap {
+  height: max-content;
+  width: 100%;
+  background-color: var(--color-5);
+  border-top: var(--border-1);
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  
+  * {
+    color: var(--text-2);
+  }
+  
+  a {
+    display: block;
+  }
+  
+  .logo-wrap,
+  .my-contacts-wrap,
+  .copy-wrap {
+    width: max-content;
+    max-width: 100%;
+    height: max-content;
+    flex-direction: row;
+    
+    .logo {
+      width: 3rem;
+      height: 3rem;
+      border-radius: var(--radius);
+      background: var(--color-6);
+      margin: 0 1rem 0 0;
+      
+      &.mit {
+        width: auto;
+      }
+    }
+  }
+  
+  .copy-wrap {
+    margin: 3rem 0 0 0;
+  }
+  
+  .wrap-my-project {
+    margin: 0 0 3rem 0;
+    width: 100%;
+    height: max-content;
+    
+    ul {
+      display: grid;
+      grid-template: auto / repeat(auto-fill, minmax(16rem, 1fr));
+    }
+  }
+}
+

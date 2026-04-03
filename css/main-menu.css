@@ -1,0 +1,45 @@
+.menu-panel {
+  position: fixed;
+  top: var(--height);
+  right: var(--right);
+  width: 200px;
+  height: max-content;
+  max-height: calc(100% - var(--height));
+  padding: 1rem;
+  z-index: 100;
+  transition: 0.3s ease;
+  justify-content: normal;
+  overflow: auto;
+  backdrop-filter: blur(20px);
+  border-radius: 0 0 0 var(--radius);
+  
+  .btn-main-page {
+    background-image: var(--gradient-5);
+  }
+  
+  .menu-btn {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background: var(--color-5);
+    white-space: nowrap;
+    border-radius: var(--radius);
+    margin: 1rem auto;
+    
+    &.active[data-type="page"] {
+      background: var(--color-6);
+    }
+    
+    svg, .btn-theme-img {
+      width: auto;
+      height: 75%;
+      aspect-ratio: 1/1;
+      margin: 0 0.5rem 0 0;
+      aspect-ratio: 1/1;
+    }
+  }
+}
+

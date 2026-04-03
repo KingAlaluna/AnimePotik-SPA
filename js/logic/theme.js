@@ -1,34 +1,18 @@
-function darkTheme() {
-  document.documentElement.dataset.theme = 'dark';
-  //активна кнопка нижнього банера
-  data.activeBtnBottomBanner.style.background = 'var(--gradient-5)';
-  //theme
-  html.btnTheme2.style.backgroundImage = 'url(img/style/dark-theme.svg)';
-  data.darkTheme = true;
-}
+import {html} from '../data/config.js';
 
-function lightTheme() {
-  document.documentElement.dataset.theme = 'light';
-  //активна кнопка нижнього банера
-  data.activeBtnBottomBanner.style.background = 'var(--gradient-5)';
-  //theme
-  html.btnTheme2.style.backgroundImage = 'url(img/style/light-theme.svg)';
-  data.darkTheme = false;
-}
 
-html.btnTheme.addEventListener('click', () => {
-  if (data.darkTheme == false) {
-    darkTheme();
+export function applyTheme(theme) {
+  if (theme == 'dark') {
+    html.HTML.dataset.theme = 'light';
   } else {
-    lightTheme();
+    html.HTML.dataset.theme = 'dark';
   }
-});
+}
 
 
-
-//для системноі теми
+//systems theme
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  darkTheme();
+  applyTheme('light');
 } else {
-  lightTheme();
+  applyTheme('dark');
 }

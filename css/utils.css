@@ -1,0 +1,9 @@
+:root {
+  --height: 8rem;
+  --right: -200px;
+  --radius: 0.5rem;
+  
+  &:has(.btn-menu.active) {
+    --right: 0;
+  }
+}

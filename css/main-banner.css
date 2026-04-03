@@ -1,0 +1,141 @@
+.main-banner {
+  height: var(--height);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: var(--border-1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+  padding: 0.5rem 1rem;
+}
+
+.my-logo-wrap {
+  width: max-content;
+  height: 3rem;
+  flex-direction: row;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  
+  .logo-img {
+    height: 3rem;
+    width: 3rem;
+    background-image: var(--gradient-6);
+    border-radius: var(--radius);
+  }
+    
+  .logo-text {
+    margin: 0 0 0 0.2rem;
+    background-image: var(--gradient-6);
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+
+
+
+/*btn menu*/
+.btn-menu {
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  border-radius: var(--radius);
+  background: var(--color-5);
+  
+  .line-menu {
+    width: 70%;
+    height: 10%;
+    border-radius: var(--radius);
+    background-color: var(--text);
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transition: 0.3s ease;
+  }
+  
+  .line-menu-2 {
+    top: 45%;
+  }
+  .line-menu-3 {
+    top: 70%;
+  }
+}
+
+
+/*btn menu animation*/
+.btn-menu.active {
+  .line-menu {
+    top: 45%;
+    width: 90%;
+    left: 5%;
+  }
+  
+  .line-menu-1 {
+    transform: rotate(45deg);
+  }
+  .line-menu-2 {
+    opacity: 0;
+  }
+  .line-menu-3 {
+    transform: rotate(-45deg);
+  }
+}
+
+
+.input-search-wrap {
+  height: 2.5rem;
+  width: 100%;
+  border: var(--border-1);
+  border-radius: var(--radius);
+  flex-direction: row;
+  padding-right: 0.5rem;
+  margin: 4.5rem 0 0 0;
+  background-color: var(--color-5);
+  
+  .input-search {
+    text-align: center;
+    border-radius: var(--radius);
+    width: auto;
+    flex: 1;
+    height: 100%;
+    background-color: inherit;
+  }
+  
+  .btn-search {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+
+@media (min-width: 700px) {
+  :root {
+    --height: 4rem;
+  }
+  
+  .main-banner {
+    justify-content: space-between;
+  }
+  
+  .my-logo-wrap {
+    position: static;
+  }
+  
+  .btn-menu {
+    position: relative;
+    inset: auto;
+  }
+  
+  .input-search-wrap {
+    max-width: 300px;
+    flex: 1;
+    margin: 0 1rem;
+  }
+}
+

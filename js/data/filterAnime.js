@@ -1,116 +1,108 @@
-//фільтр жанри шаблон кнопки
-function btnGenre(data, text) {
-  html.containerSortGenre.insertAdjacentHTML('beforeend', `
-    <button class="btn-sort btn-genre-sort" data-genre="${data}" data-text="${text}">${text}</button>
-  `);
-  return html.containerSortGenre.lastElementChild;
-}
-
-
-//фільтр тип шаблон кнопки
-function btnType(data, text) {
-  html.containerSortType.insertAdjacentHTML('beforeend', `
-    <button class="btn-sort btn-type-sort" data-type="${data}" data-text="${text}">${text}</button>
-  `);
-  return html.containerSortType.lastElementChild;
-}
-
-
-//фільтр рік шаблон кнопки
-function btnYear(data) {
-  html.containerSortYear.insertAdjacentHTML('beforeend', `
-    <button class="btn-sort btn-year-sort" data-year="${data}" data-text="за ${data} рік">${data}</button>
-  `);
-  return html.containerSortYear.lastElementChild;
-}
-
-
-//фільтр студія шаблон кнопки
-function btnStudio(data, text) {
-  html.containerSortStudio.insertAdjacentHTML('beforeend', `
-    <button class="btn-sort btn-studio-sort" data-studio="${data}" data-text="Студії ${text}">${text}</button>
-  `);
-  return html.containerSortStudio.lastElementChild;
+//templates btn filter
+class Btn {
+  constructor(props) {
+    const key = props.key ? props.key : props.name;
+    this.btn = `<button class="btn-filter-anime" data-type="${props.type}" data-filter="${key}">${props.name}</button>`;
+  }
 }
 
 
 
-//всі кнопки жанрів
-const allBtnGenre = [
-  btnGenre(1, 'Екшен'),
-  btnGenre(2, 'Пригоди'),
-  btnGenre(4, 'Комедія'),
-  btnGenre(8, 'Драма'),
-  btnGenre(10, 'Фентезі'),
-  btnGenre(14, 'Жахи'),
-  btnGenre(7, 'Містика'),
-  btnGenre(22, 'Романтика'),
-  btnGenre(24, 'Наукова фантастика'),
-  btnGenre(36, 'Повсякденність'),
-  btnGenre(30, 'Спорт'),
-  btnGenre(37, 'Надприродне'),
-  btnGenre(41, 'Трилер'),
-  btnGenre(27, 'Сьонен'),
-  btnGenre(25, 'Сьоджьо'),
-  btnGenre(42, 'Сейнен'),
-  btnGenre(43, 'Джьосей'),
-  btnGenre(15, 'Для дітей'),
-  btnGenre(13, 'Історичні'),
-  btnGenre(17, 'Бойові мистецтва'),
-  btnGenre(18, 'Меха'),
-  btnGenre(19, 'Музика'),
-  btnGenre(23, 'Школа'),
-  btnGenre(31, 'Суперсили'),
-  btnGenre(38, 'Військові'),
-  btnGenre(39, 'Поліція'),
-  btnGenre(40, 'Психологічні'),
-  btnGenre(9, 'Еччі'),
-  btnGenre(49, 'Еротика'),
-  btnGenre(12, 'Хентай')
-];
+//data filter
+export const allFilter = {
+  years: [],
+  types: [],
+  genres: [],
+  studios: []
+};
 
 
-//всі кнопки типів
-const allBtnType = [
-  btnType('tv', 'Телесеріали'),
-  btnType('movie', 'Фільми'),
-  btnType('ova', 'OVA'),
-  btnType('special', 'Спешели'),
-  btnType('ona', 'ONA'),
-  btnType('music', 'Музичні відео')
-];
+//data constructor filter
+let years = 2026;
 
 
-//всі кнопки років
-const allBtnYear = [];
+const btnValue = {
+genres: [
+  [1, 'Екшен'],
+  [2, 'Пригоди'],
+  [4, 'Комедія'],
+  [8, 'Драма'],
+  [10, 'Фентезі'],
+  [14, 'Жахи'],
+  [7, 'Містика'],
+  [22, 'Романтика'],
+  [24, 'Наукова фантастика'],
+  [36, 'Повсякденність'],
+  [30, 'Спорт'],
+  [37, 'Надприродне'],
+  [41, 'Трилер'],
+  [27, 'Сьонен'],
+  [25, 'Сьоджьо'],
+  [42, 'Сейнен'],
+  [43, 'Джьосей'],
+  [15, 'Для дітей'],
+  [13, 'Історичні'],
+  [17, 'Бойові мистецтва'],
+  [18, 'Меха'],
+  [19, 'Музика'],
+  [23, 'Школа'],
+  [31, 'Суперсили'],
+  [38, 'Військові'],
+  [39, 'Поліція'],
+  [40, 'Психологічні'],
+  [9, 'Еччі'],
+  [49, 'Еротика'],
+  [12, 'Хентай']
+],
 
-let year = 2027;
 
-while (year > 1964) {
-  year -= 1;
-  allBtnYear.push(btnYear(year));
+types: [
+  ['tv', 'Телесеріали'],
+  ['movie', 'Фільми'],
+  ['ova', 'OVA'],
+  ['special', 'Спешели'],
+  ['ona', 'ONA'],
+  ['music', 'Музичні відео']
+],
+
+
+studios: [
+  [4, 'Bones'],
+  [10, 'Production I.G'],
+  [11, 'Madhouse'],
+  [18, 'Toei Animation'],
+  [21, 'Studio Ghibli'],
+  [28, 'OLM'],
+  [29, 'Nippon Animation'],
+  [37, 'Studio Deen'],
+  [43, 'ufotable'],
+  [44, 'Shaft'],
+  [47, 'Sunrise'],
+  [56, 'A-1 Pictures'],
+  [79, 'Genco'],
+  [91, 'Studio Pierrot'],
+  [112, 'Kyoto Animation'],
+  [314, 'White Fox'],
+  [569, 'MAPPA'],
+  [858, 'Wit Studio'],
+  [1835, 'CloverWorks']
+]
+};
+
+
+
+//logic push btn filter
+while (years > 1965) {
+  allFilter.years.push(new Btn({type: 'years', name: years}).btn);
+  years -= 1;
 }
 
+function addGeneral(value) {
+  btnValue[value].forEach(e => {
+    allFilter[value].push(new Btn({type: value, key: e[0], name: e[1]}).btn);
+  });
+}
 
-//всі кнопки студій
-const allBtnStudio = [
-  btnStudio(4, 'Bones'),
-  btnStudio(10, 'Production I.G'),
-  btnStudio(11, 'Madhouse'),
-  btnStudio(18, 'Toei Animation'),
-  btnStudio(21, 'Studio Ghibli'),
-  btnStudio(28, 'OLM'),
-  btnStudio(29, 'Nippon Animation'),
-  btnStudio(37, 'Studio Deen'),
-  btnStudio(43, 'ufotable'),
-  btnStudio(44, 'Shaft'),
-  btnStudio(47, 'Sunrise'),
-  btnStudio(56, 'A-1 Pictures'),
-  btnStudio(79, 'Genco'),
-  btnStudio(91, 'Studio Pierrot'),
-  btnStudio(112, 'Kyoto Animation'),
-  btnStudio(314, 'White Fox'),
-  btnStudio(569, 'MAPPA'),
-  btnStudio(858, 'Wit Studio'),
-  btnStudio(1835, 'CloverWorks')
-];
+addGeneral('types');
+addGeneral('genres');
+addGeneral('studios');
