@@ -1,6 +1,6 @@
 import {html, data} from '../data/config.js';
-import {clearAnime, pagTextContent, startAnime} from './animeRenderList.js';
-import {clearFilter} from './pages/animeFilter.js';
+import {clearAnime, pagTextContent, startAnime} from './anime-render-list.js';
+import {clearFilter} from './pages/anime-filter.js';
 
 
 //switch pages

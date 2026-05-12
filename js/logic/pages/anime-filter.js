@@ -1,6 +1,6 @@
 import {html, data, c} from '../../data/config.js';
-import {allFilter} from '../../data/filterAnime.js';
-import {clearAnime, pagTextContent, sortTopAnime, sortAnime} from '../animeRenderList.js';
+import {allFilter} from '../../data/filter-anime.js';
+import {clearAnime, pagTextContent, sortTopAnime, sortAnime} from '../anime-render-list.js';
 
 
 //clear filter

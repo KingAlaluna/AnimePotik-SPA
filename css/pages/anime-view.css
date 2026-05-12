@@ -9,8 +9,8 @@
   .info-wrap {
     width: 100%;
     height: 100%;
-    border-left: var(--border-1);
-    background: var(--color-5);
+    border-left: var(--border);
+    background: var(--info-wrap-bg);
     border-radius: var(--radius);
     padding: 0 1rem;
     
@@ -22,7 +22,7 @@
       border-radius: var(--radius);
       
       &:nth-child(2n) {
-        background: var(--color-3);
+        background: var(--info-span-color);
       }
     }
   }
@@ -35,8 +35,8 @@
   width: 100%;
   max-width: 1000px;
   border-radius: var(--radius);
-  border-left: var(--border-1);
-  background: var(--color-5);
+  border-left: var(--border);
+  background: var(--description-anime-bg);
   padding: 1rem;
   
   &[open] .summary {

@@ -1,6 +1,6 @@
 .root {
   position: relative;
-  background: var(--color-3);
+  background: var(--root-bg);
 }
 
 .wrap-btn-scroll-page {
@@ -20,7 +20,7 @@
   height: 3rem;
   width: 3rem;
   border-radius: var(--radius);
-  background: var(--color-6);
+  background: var(--btn-scroll-page-bg);
   backdrop-filter: blur(20px);
   cursor: pointer;
   display: none;

@@ -1,5 +1,5 @@
 //html elements
-const i = (id) => document.getElementById(id);
+export const i = (id) => document.getElementById(id);
 export const c = (classis) => document.querySelectorAll(`.${classis}`);
 
 
@@ -14,7 +14,7 @@ export const html = {
   //wraps
   wrapAnimeViewInfo: i('wrap-anime-view-info'),
   
-  containerTop10Anime: i('container-top-10-anime'),
+  wrapTopAnime: i('wrap-top-anime'),
   containerRecommendAmine: i('container-recommend-amine'),
   
   wrapFilterAnime: c('wrap-filter-anime'),

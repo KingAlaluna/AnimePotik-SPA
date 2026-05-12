@@ -31,12 +31,12 @@
   min-height: 2rem;
   max-height: max-content;
   border-radius: var(--radius);
-  background: var(--color-5);
+  background: var(--btn-filter-anime-bg);
   overflow-wrap: break-word;
   padding: 0.5rem;
   
   &:hover {
-    background: var(--color-6);
+    background: var(--btn-filter-anime-hover-bg);
   }
 }
 

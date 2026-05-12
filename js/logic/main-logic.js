@@ -1,9 +1,10 @@
-import './scrollPages.js';
+import './scroll-pages.js';
+import './footer-copy.js';
 
 import {html} from '../data/config.js';
-import {noneAllPage} from './switchPages.js';
+import {noneAllPage} from './switch-pages.js';
 import {applyTheme} from './theme.js';
-import {performSearch} from './pages/animeSearch.js';
+import {performSearch} from './pages/anime-search.js';
 
 
 

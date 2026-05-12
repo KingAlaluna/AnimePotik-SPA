@@ -24,13 +24,13 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    background: var(--color-5);
+    background: var(--btn-menu-bg);
     white-space: nowrap;
     border-radius: var(--radius);
     margin: 1rem auto;
     
     &.active[data-type="page"] {
-      background: var(--color-6);
+      background: var(--menu-btn-active-bg);
     }
     
     svg, .btn-theme-img {

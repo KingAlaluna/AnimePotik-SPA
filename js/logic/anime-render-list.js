@@ -1,6 +1,6 @@
 import {html, data} from '../data/config.js';
-import {noneAllPage} from './switchPages.js';
-import {infoAnime} from './pages/animeView.js';
+import {noneAllPage} from './switch-pages.js';
+import {infoAnime} from './pages/anime-view.js';
 
 
 //пагінація
@@ -104,8 +104,9 @@ export async function sortTopAnime() {
   let animeTop25 = animeTop.slice(0, 25);
   
   //кліентська логіка
-  animeFor(animeTop25, 'containerTop10Anime');
-  } catch {
+  animeFor(animeTop25, 'wrapTopAnime');
+  } catch (e) {
+    console.error('помилка sortTopAnime', e);
   }
 }
 
@@ -124,7 +125,8 @@ export async function sortAnime() {
   
   //на сайті
   animeFor(animeRecommend, 'containerRecommendAmine');
-  } catch {
+  } catch (e) {
+    console.error('помилка sortAnime', e);
   }
 }
 
@@ -144,7 +146,8 @@ export async function startAnime() {
     
     sortTopAnime();
     sortAnime();
-  } catch {
+  } catch (e) {
+    console.error('помилка startAnime', e);
   }
   data.animeSearch = false;
 }
@@ -153,7 +156,7 @@ startAnime();
 
 //очистить списки аниме
 export function clearAnime() {
-  html.containerTop10Anime.innerHTML = '';
+  html.wrapTopAnime.innerHTML = '';
   html.containerRecommendAmine.innerHTML = '';
   noneAllPage({page: 'main-page'});
 }

@@ -1,0 +1,45 @@
+:root {
+  --border: 1px solid var(--grey-250);
+  
+  --text-color: var(--black-900);
+  --footer-copy-text-color: var(--grey-600);
+  
+  --anime-img-span-bg: var(--white-100);
+  
+  --menu-btn-line-bg: var(--black-900);
+  --info-span-color: var(--white-50);
+  --root-bg: var(--white-50);
+  --wrap-top-anime-bg: var(--white-50);
+  --description-anime-bg: var(--white-100);
+  --info-wrap-bg: var(--white-100);
+  --btn-filter-anime-bg: var(--white-100);
+  --anime-wrap-bg: var(--white-100);
+  --footer-copy-wrap-bg: var(--white-100);
+  --btn-menu-bg: var(--white-100);
+  --input-search-wrap-bg: var(--white-100);
+  --btn-scroll-page-bg: var(--grey-300-a30);
+  --menu-btn-active-bg: var(--grey-300-a30);
+  --logo-bg: var(--grey-300-a30);
+  --pagination-btn-bg: var(--grey-300-a30);
+  --btn-filter-anime-hover-bg: var(--grey-300-a30);
+  
+  
+  /*projects*/
+  --project-type-bg: var(--white-150);
+  
+  --status-alpha-color: var(--red-600);
+  --status-alpha-bg: var(--white-150);
+  --status-alpha-border-color: var(--red-600);
+  
+  --status-beta-color: var(--yellow-700);
+  --status-beta-bg: var(--white-150);
+  --status-beta-border-color: var(--yellow-700);
+  
+  
+  --main-logo-gradient: linear-gradient(155deg, var(--cyan-700) 0%, var(--azure-800) 30%, var(--violet-700) 60%, var(--magenta-800) 90%);
+  
+  .btn-theme-img {
+    background-image: url(../../img/style/light-theme.svg);
+  }
+}
+

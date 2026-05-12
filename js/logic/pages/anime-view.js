@@ -1,5 +1,5 @@
 import {html} from '../../data/config.js';
-import {noneAllPage} from '../switchPages.js';
+import {noneAllPage} from '../switch-pages.js';
 
 
 //відобразити інформацію про аніме

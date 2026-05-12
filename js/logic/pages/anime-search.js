@@ -1,13 +1,13 @@
 import {html, data} from '../../data/config.js';
-import {clearAnime, pagTextContent, sortTopAnime, sortAnime} from '../animeRenderList.js';
-import {clearFilter} from './animeFilter.js';
+import {clearAnime, pagTextContent, sortTopAnime, sortAnime} from '../anime-render-list.js';
+import {clearFilter} from './anime-filter.js';
 
 
-//логіка пошуку аніме
+//search anime
 export async function performSearch() {
   const query = html.inputSearch.value.trim();
-  data.querys = query;
   if (query) {
+    data.querys = query;
     clearAnime();
     clearFilter();
     data.paginationPage = 1;
@@ -23,7 +23,7 @@ export async function performSearch() {
       sortTopAnime();
       sortAnime();
     } catch (e) {
-      console.error("Ошибка поиска");
+      console.error("Помилка пошуку");
     }
     
     html.inputSearch.blur();

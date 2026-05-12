@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: var(--border-1);
+  border-bottom: var(--border);
   position: fixed;
   top: 0;
   left: 0;
@@ -23,13 +23,13 @@
   .logo-img {
     height: 3rem;
     width: 3rem;
-    background-image: var(--gradient-6);
+    background-image: var(--main-logo-img-bg);
     border-radius: var(--radius);
   }
     
   .logo-text {
     margin: 0 0 0 0.2rem;
-    background-image: var(--gradient-6);
+    background-image: var(--main-logo-text-color);
     background-clip: text;
     color: transparent;
   }
@@ -46,13 +46,13 @@
   top: 0.5rem;
   right: 1rem;
   border-radius: var(--radius);
-  background: var(--color-5);
+  background: var(--btn-menu-bg);
   
   .line-menu {
     width: 70%;
     height: 10%;
     border-radius: var(--radius);
-    background-color: var(--text);
+    background-color: var(--menu-btn-line-bg);
     position: absolute;
     top: 20%;
     left: 15%;
@@ -91,12 +91,12 @@
 .input-search-wrap {
   height: 2.5rem;
   width: 100%;
-  border: var(--border-1);
+  border: var(--border);
   border-radius: var(--radius);
   flex-direction: row;
   padding-right: 0.5rem;
   margin: 4.5rem 0 0 0;
-  background-color: var(--color-5);
+  background-color: var(--input-search-wrap-bg);
   
   .input-search {
     text-align: center;
